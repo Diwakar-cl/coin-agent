@@ -1,4 +1,4 @@
-def coin_collected(current_coin):
+def coin_collect(current_coin):
 
     if current_coin >= goal:
         print("Goal already reached. enter reset or quit.")
@@ -26,23 +26,23 @@ def clear_record(current_coin):
     return 0
 
 tools = {
-    "coin collected": coin_collected,
-    "total coin collected": show_total,
-    "remaining coin": remaining_coin,
-    "clear count": clear_record
+    "coin_collect": coin_collect,
+    "total_coin_collected": show_total,
+    "remaining_coin": remaining_coin,
+    "clear_count": clear_record
 }
 
 def choose_tool(request):
     text = request
 
     if "reset" in text or "clear" in text:
-        return "clear count"
+        return "clear_count"
     elif "remain" in text or "left" in text:
-        return "remaining coin"
+        return "remaining_coin"
     elif "total" in text or "collected" in text:
-        return "total coin collected"
+        return "total_coin_collected"
     elif "collect" in text:
-        return "coin collected"
+        return "coin_collect"
   
     else:
         return None
