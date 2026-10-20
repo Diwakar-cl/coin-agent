@@ -1,6 +1,6 @@
 # Coin Agent
 
-A tiny tool-dispatching agent in **190 lines of dependency-free Python**.
+A tiny tool-dispatching agent.
 
 It has the same architecture as a real LLM agent — a state object, a registry of
 tools, and a router that decides which tool a request should call — with one thing
@@ -131,6 +131,3 @@ Building in public, one repo at a time.
 
 ---
 
-## License
-
-MIT — do whatever you like with it.
